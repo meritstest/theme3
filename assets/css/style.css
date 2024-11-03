@@ -466,11 +466,21 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 main { overflow-x: hidden; }
-  .typing-text{
-  color: var(--raw-seinna);
-  white-space: nowrap;
-    transition: opacity 0.5s ease;
+  .typing-text {
+    font-size: 24px; /* Adjust size as needed */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow */
+    border-right: 2px solid; /* Simulate a cursor */
+    animation: blink 0.7s step-end infinite; /* Cursor blinking effect */
 }
+
+/* Blinking cursor animation */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
   .typing{
     color: var(--raw-seinna);
   }
