@@ -1120,7 +1120,30 @@ textarea.input-field {
 
   .stats-list { grid-template-columns: 1fr 1fr; }
 
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .education-image {
+    margin: 15px 0 0;
+    width: 100%;
+    max-width: 300px;
+  }
 
+  /* Adjust heading font size */
+  .education h2 {
+    font-size: 1.75rem;
+  }
+
+  .education-details h3 {
+    font-size: 1.25rem;
+  }
+
+  .education-details p {
+    font-size: 0.9rem;
+  }
+}
 
   /**
    * ABOUT
