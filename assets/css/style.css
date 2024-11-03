@@ -87,7 +87,7 @@ body.dark_theme {
   --color-secondary: hsl(0, 0%, 62%);
   --card-shadow: hsla(0, 0%, 0%, 0.4);
   --input-bg: hsl(0, 0%, 16%);
-
+  --img-bg: white;
   --shadow-1: 10px 10px 40px var(--card-shadow);
 
 }
@@ -100,7 +100,7 @@ body.light_theme {
   --color-secondary: hsl(0, 0%, 37%);
   --card-shadow: hsla(0, 0%, 0%, 0.1);
   --input-bg: hsl(0, 0%, 93%);
-
+  --img-bg: hsl(0, 0%, 37%);
   --shadow-1: 10px 10px 40px var(--card-shadow);
 
 }
@@ -585,7 +585,7 @@ main { overflow-x: hidden; }
   border-radius: var(--blob-radius);
   overflow: hidden;
   animation: blobAnim 30s linear infinite;
-  background-color: var(--hero-bg); /* or any contrasting color */
+  background-color: var(--img-bg); /* or any contrasting color */
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
@@ -1107,12 +1107,7 @@ textarea.input-field {
   /**
    * REUSED STYLE
    */
-  .typing-text{
-  color: var(--raw-seinna);
-}
-  .typing{
-    color: var(--raw-seinna);
-  }
+
   .container { max-width: 720px; }
 
   .section-title { max-width: 430px; }
@@ -1384,13 +1379,6 @@ textarea.input-field {
 
   .about-banner { margin-bottom: 0; }
 
-
-  .education {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 30px;
-  }
 
 
 
