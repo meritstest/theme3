@@ -25,7 +25,7 @@
   --scarlet: hsl(13, 96%, 47%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
-  --eerie-black: hsla(228, 9%, 10%, 1);
+
   /**
    * typography
    */
@@ -51,9 +51,6 @@
 
   --transition-1: 0.25s ease-in-out;
 
-  --radius-pill: 100px;
-  --radius-circle: 50%;
-  --blob-radius: 52% 48% 59% 41% / 53% 40% 60% 47%;
   /**
    * spacing
    */
@@ -67,43 +64,14 @@
   --radius-4: 4px;
   --radius-12: 12px;
 
-}
-
-.about .about-banner {
-  border-radius: var(--blob-radius);
-  overflow: hidden;
-  animation: blobAnim 30s linear infinite;
-  background-color: var(--hero-bg); /* or any contrasting color */
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 1;
   
-}
-
-@keyframes blobAnim {
-
-  0%,
-  100% { border-radius: var(--blob-radius); }
-
-  10% { border-radius: 33% 67% 50% 50% / 43% 39% 61% 57%; }
-
-  20% { border-radius: 51% 49% 31% 69% / 65% 39% 61% 35%; }
-
-  30% { border-radius: 51% 49% 56% 44% / 45% 39% 61% 55%; }
-
-  40% { border-radius: 66% 34% 33% 67% / 48% 71% 39% 52%; }
-
-  50% { border-radius: 46% 54% 33% 67% / 48% 30% 70% 52%; }
-
-  60% { border-radius: 46% 54% 56% 44% / 48% 30% 70% 52%; }
-
-  70% { border-radius: 46% 54% 56% 44% / 65% 53% 47% 35%; }
-
-  80% { border-radius: 67% 33% 56% 44% / 37% 53% 47% 63%; }
-
-  90% { border-radius: 46% 54% 32% 68% / 37% 53% 47% 63%; }
+  --radius-pill: 100px;
+  --radius-circle: 50%;
+  --blob-radius: 52% 48% 59% 41% / 53% 40% 60% 47%;
 
 }
+
+
 
 
 
@@ -113,26 +81,26 @@
 
 body.dark_theme {
 
-  --bg-primary: var(--eerie-black);
+  --bg-primary: hsl(0, 0%, 12%);
   --bg-secondary: hsl(0, 0%, 19%);
   --color-primary: hsl(0, 0%, 100%);
   --color-secondary: hsl(0, 0%, 62%);
-  --card-shadow: hsla(0, 1%, 70%, 0.4);
+  --card-shadow: hsla(0, 0%, 0%, 0.4);
   --input-bg: hsl(0, 0%, 16%);
-  --hero-bg: white;
+
   --shadow-1: 10px 10px 40px var(--card-shadow);
 
 }
 
 body.light_theme {
 
-  --bg-primary: hsla(0, 7%, 89%, 0.373);
+  --bg-primary: hsl(0, 0%, 90%);
   --bg-secondary: hsl(0, 0%, 100%);
   --color-primary: hsl(0, 0%, 12%);
   --color-secondary: hsl(0, 0%, 37%);
   --card-shadow: hsla(0, 0%, 0%, 0.1);
   --input-bg: hsl(0, 0%, 93%);
-  --hero-bg: hsla(0, 7%, 89%, 0.373);
+
   --shadow-1: 10px 10px 40px var(--card-shadow);
 
 }
@@ -233,7 +201,7 @@ body.active { overflow: hidden; }
 
 .h3 { font-size: var(--fs-3); }
 
-.h4 { font-size: 18pt; }
+.h4 { font-size: var(--fs-5); }
 
 .w-100 { width: 100%; }
 
@@ -247,17 +215,13 @@ body.active { overflow: hidden; }
   border: 1px solid transparent;
   border-radius: var(--radius-4);
   transition: var(--transition-1);
-  display: inline-block ;
 }
 
-.btn-primary { border-color: var(--color-primary);
-  display: inline-block ;
- }
+.btn-primary { border-color: var(--color-primary); }
 
 .btn-primary:is(:hover, :focus) {
   background: var(--color-primary);
   color: var(--bg-primary);
-  display: inline-block;
 }
 
 .btn-secondary {
@@ -265,7 +229,6 @@ body.active { overflow: hidden; }
   border-color: var(--raw-seinna);
   color: var(--black);
 }
-.logo:is(:hover, :focus) { color: var(--color-primary);}
 
 .btn-secondary:is(:hover, :focus) { --raw-seinna: hsl(24, 74%, 64%); }
 
@@ -355,7 +318,7 @@ body.active { overflow: hidden; }
 
 .logo a {
   color: var(--color-primary);
-  font-family: var(--ff-saira-stencil-one);
+  font-family: var(--ff-poppins);
 }
 
 .logo span {
@@ -513,12 +476,31 @@ main { overflow-x: hidden; }
   padding-top: 115px;
   margin-bottom: var(--section-padding);
 }
+@keyframes blobAnim {
 
-.hero-banner {
-  max-width: 500px;
-  width: 125%;
-  margin-bottom: 30px;
+  0%,
+  100% { border-radius: var(--blob-radius); }
+
+  10% { border-radius: 33% 67% 50% 50% / 43% 39% 61% 57%; }
+
+  20% { border-radius: 51% 49% 31% 69% / 65% 39% 61% 35%; }
+
+  30% { border-radius: 51% 49% 56% 44% / 45% 39% 61% 55%; }
+
+  40% { border-radius: 66% 34% 33% 67% / 48% 71% 39% 52%; }
+
+  50% { border-radius: 46% 54% 33% 67% / 48% 30% 70% 52%; }
+
+  60% { border-radius: 46% 54% 56% 44% / 48% 30% 70% 52%; }
+
+  70% { border-radius: 46% 54% 56% 44% / 65% 53% 47% 35%; }
+
+  80% { border-radius: 67% 33% 56% 44% / 37% 53% 47% 63%; }
+
+  90% { border-radius: 46% 54% 32% 68% / 37% 53% 47% 63%; }
+
 }
+
 
 :is(.hero-social-list, .scroll-down) { display: none; }
 
@@ -529,7 +511,7 @@ main { overflow-x: hidden; }
   margin-bottom: 30px;
 }
 
-.hero .btn-primary { margin-inline: auto; }
+.hero .btn-primary { position: relative; }
 
 
 
@@ -600,9 +582,13 @@ main { overflow-x: hidden; }
 .about { padding-block: var(--section-padding); }
 
 .about-banner {
-  max-width: 200px;
-  margin-inline: auto;
-  margin-bottom: 80px;
+  border-radius: var(--blob-radius);
+  overflow: hidden;
+  animation: blobAnim 30s linear infinite;
+  background-color: var(--hero-bg); /* or any contrasting color */
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
 }
 
 .about .btn {
@@ -611,10 +597,10 @@ main { overflow-x: hidden; }
 }
 
 .about .btn-secondary { margin-bottom: 10px; }
-.about .typing-text{
-  color: var(--raw-seinna);
-  display: inline-block;
-}
+
+
+
+
 
 /*-----------------------------------*\
  * #SKILLS
@@ -894,7 +880,6 @@ textarea.input-field {
   width: 100%;
   background: var(--color-primary);
   color: var(--bg-primary);
-  margin-top: 10px; /* Add space from text if needed */
 }
 
 
@@ -1163,26 +1148,6 @@ textarea.input-field {
     height: 100vh;
   }
 
-  .hero-banner {
-    max-width: unset;
-    height: 100%;
-    margin-bottom: 0;
-  }
-
-  .hero img {
-    height: 100%;
-    width: auto;
-    margin-inline: auto;
-  }
-
-  .hero-content {
-    --color-primary: var(--white);
-
-    position: absolute;
-    top: 50%;
-    filter: drop-shadow(2px 4px 10px var(--black));
-  }
-
   .hero .btn-primary:is(:hover, :focus) { color: hsl(0, 0%, 12%); }
 
   .hero-social-list {
@@ -1220,7 +1185,9 @@ textarea.input-field {
     top: 50%;
     transform: translateY(-50%) translateX(var(--trans-x));
   }
-
+  .typing-text{
+  color: var(--raw-seinna);
+}
   .hero-social-link:is(:hover, :focus) .tooltip {
     --trans-x: 0;
     opacity: 1;
