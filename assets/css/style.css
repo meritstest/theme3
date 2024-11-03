@@ -600,7 +600,115 @@ main { overflow-x: hidden; }
 
 
 
+.education {
+  padding-block: var(--section-padding);
+}
 
+.education-section {
+  padding: 20px;
+  display: flex;            /* Use Flexbox for the layout */
+  overflow-x: hidden;        /* Enable horizontal scrolling */
+  white-space: nowrap;     /* Prevent wrapping */
+  gap: 30px;               /* Space between cards */
+  list-style-type: none;   /* Remove default list styling */
+  padding: 0;              /* Remove default padding */
+  margin: 0;               /* Prevent wrapping */
+}
+
+.education-section h2 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 100%;             /* Ensures the title spans the entire width */
+}
+
+/* Card Style */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Remove margin from the last card */
+
+/* Hover Effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.education-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* Text Styling */
+.education-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.education-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.experience {
+  padding: var(--section-padding) ;                /* Padding for the section */
+}
+
+.experience h2 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;             /* Vertical layout for timeline */
+  gap: 20px;                          /* Space between experience cards */
+}
+
+.experience-card {
+  background-color: #fff;
+  border-left: 4px solid var(--raw-seinna);    /* Blue line on the left */
+  padding: 15px 20px;                 /* Padding inside each card */
+  border-radius: 8px;                 /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;   /* Shadow effect on hover */
+}
+
+.experience-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experience-year {
+  font-weight: bold;                  /* Bold year text */
+  color: var(--raw-seinna);                    /* Blue color for the year */
+  margin-bottom: 10px;               /* Space below the year */
+}
+
+.experience-details h3 {
+  margin: 0;
+  font-size: 20px;                   /* Title font size */
+  color: #333;                       /* Dark color for titles */
+}
+
+.experience-details p {
+  margin: 5px 0;                     /* Space between paragraphs */
+  color: #555;                       /* Darker gray for text */
+}
 
 /*-----------------------------------*\
  * #SKILLS
@@ -637,8 +745,8 @@ main { overflow-x: hidden; }
 }
 
 .skills-toggle.active::before {
-  left: 98px;
-  width: 94px;
+  left: 100px;
+  width: 100px;
 }
 
 .toggle-btn {
@@ -669,22 +777,26 @@ main { overflow-x: hidden; }
   100% { opacity: 1; }
 
 }
-
 .skill-card {
-  position: relative;
-  background: var(--bg-secondary);
-  width: 80px;
-  height: 80px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius-12);
-  box-shadow: var(--shadow-1);
-  cursor: help;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.skill-card:hover .tooltip {
-  transform: translateY(0);
-  opacity: 1;
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-name {
+  font-size: 16px;
+  color: #333;
 }
 
 
@@ -1188,6 +1300,9 @@ textarea.input-field {
   .typing-text{
   color: var(--raw-seinna);
 }
+  .typing{
+    color: var(--raw-seinna);
+  }
   .hero-social-link:is(:hover, :focus) .tooltip {
     --trans-x: 0;
     opacity: 1;
