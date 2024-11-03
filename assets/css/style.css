@@ -1107,7 +1107,12 @@ textarea.input-field {
   /**
    * REUSED STYLE
    */
-
+  .typing-text{
+  color: var(--raw-seinna);
+}
+  .typing{
+    color: var(--raw-seinna);
+  }
   .container { max-width: 720px; }
 
   .section-title { max-width: 430px; }
@@ -1379,6 +1384,13 @@ textarea.input-field {
 
   .about-banner { margin-bottom: 0; }
 
+
+  .education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+  }
 
 
 
