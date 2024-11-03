@@ -1,7 +1,13 @@
-
 document.addEventListener("DOMContentLoaded", function() {
   var typed = new Typed(".typing-text", {
-    strings: ["HR Specialist", "DELF Certified", "Francophone", "Alliance Member of Motilal Oswal"],
+    strings: ["", "HR Operations", "DELF Certified", "Francophone", "Premier Alliance with Motilal Oswal"],
+    loop: true,
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 500,
+  });
+  var typed1 = new Typed(".typing", {
+    strings: ["", "Strategic Partnership Development","Operational Excellence","Digital Savvy","Analytical Acumen"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
