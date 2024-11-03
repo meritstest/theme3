@@ -486,10 +486,19 @@ main { overflow-x: hidden; }
                 border-color: transparent;
             }
         }
-
-  .typing{
-    color: var(--raw-seinna);
-  }
+.typing{
+            font-size: 24px; /* Adjust size as needed */
+            white-space: nowrap; /* Prevent line breaks */
+            overflow: hidden; /* Hide overflow */
+            border-right: 2px solid; /* Simulate a cursor */
+            animation: blink 0.7s step-end infinite; /* Cursor blinking effect */
+            width: 300px; /* Set a fixed width */
+            height: 30px; /* Set a fixed height */
+            line-height: 30px; /* Align text vertically */
+            /* Optional: Center align text */
+            display: inline-block; /* Required for fixed width */
+            margin: 0; /* Reset margins */
+}
 .hero {
   min-height: 100vh;
   display: flex;
