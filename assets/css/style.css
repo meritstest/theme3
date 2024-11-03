@@ -466,7 +466,14 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 main { overflow-x: hidden; }
-
+  .typing-text{
+  color: var(--raw-seinna);
+  white-space: nowrap;
+    transition: opacity 0.5s ease;
+}
+  .typing{
+    color: var(--raw-seinna);
+  }
 .hero {
   min-height: 100vh;
   display: flex;
