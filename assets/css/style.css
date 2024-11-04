@@ -472,8 +472,8 @@ main { overflow-x: hidden; }
             overflow: hidden; /* Hide overflow */
             border-right: 2px solid; /* Simulate a cursor */
             animation: blink 0.7s step-end infinite; /* Cursor blinking effect */
-            width: 500px; /* Set a fixed width */
-            height: 30px; /* Set a fixed height */
+            width: auto; /* Set a fixed width */
+            height: 40px; /* Set a fixed height */
             line-height: 30px; /* Align text vertically */
             /* Optional: Center align text */
             display: inline-block; /* Required for fixed width */
@@ -492,8 +492,8 @@ main { overflow-x: hidden; }
             overflow: hidden; /* Hide overflow */
             border-right: 2px solid; /* Simulate a cursor */
             animation: blink 0.7s step-end infinite; /* Cursor blinking effect */
-            width: 300px; /* Set a fixed width */
-            height: 30px; /* Set a fixed height */
+            width: 400px; /* Set a fixed width */
+            height: 40px; /* Set a fixed height */
             line-height: 30px; /* Align text vertically */
             /* Optional: Center align text */
             display: inline-block; /* Required for fixed width */
