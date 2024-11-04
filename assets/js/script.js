@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     typeSpeed: 50,
     backSpeed: 25,
     backDelay: 500,
+    showCursor: false
   });
   var typed1 = new Typed(".typing", {
     strings: ["", "Strategic Partnership Development","Operational Excellence","Digital Savvy","Analytical Acumen"],
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     typeSpeed: 50,
     backSpeed: 25,
     backDelay: 500,
+    showCursor: false
   });
 });
 
