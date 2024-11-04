@@ -472,7 +472,7 @@ main { overflow-x: hidden; }
             overflow: hidden; /* Hide overflow */
             border-right: 2px solid; /* Simulate a cursor */
             animation: blink 0.7s step-end infinite; /* Cursor blinking effect */
-            width: auto; /* Set a fixed width */
+            width: 550px; /* Set a fixed width */
             height: 40px; /* Set a fixed height */
             line-height: 30px; /* Align text vertically */
             /* Optional: Center align text */
@@ -487,12 +487,12 @@ main { overflow-x: hidden; }
             }
         }
 .typing{
-            font-size: 30px; /* Adjust size as needed */
+            font-size: 24px; /* Adjust size as needed */
             white-space: nowrap; /* Prevent line breaks */
             overflow: hidden; /* Hide overflow */
             border-right: 2px solid; /* Simulate a cursor */
             animation: blink 0.7s step-end infinite; /* Cursor blinking effect */
-            width: 400px; /* Set a fixed width */
+            width: 500px; /* Set a fixed width */
             height: 40px; /* Set a fixed height */
             line-height: 30px; /* Align text vertically */
             /* Optional: Center align text */
@@ -622,7 +622,10 @@ main { overflow-x: hidden; }
   position: relative;
   z-index: 1;
 }
-
+.about-banner img{
+  width: 400px;
+  height: 400px;
+}
 .about .btn {
   max-width: unset;
   width: 100%;
@@ -697,7 +700,7 @@ main { overflow-x: hidden; }
 }
 
 .experience {
-  padding: var(--section-padding) ;                /* Padding for the section */
+  padding-block: var(--section-padding) ;                /* Padding for the section */
 }
 
 .experience h2 {
