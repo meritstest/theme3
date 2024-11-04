@@ -467,6 +467,7 @@ body.active { overflow: hidden; }
 
 main { overflow-x: hidden; }
   .typing-text {
+            font-size: 30px; /* Adjust size as needed */
             white-space: nowrap; /* Prevent line breaks */
             overflow: hidden; /* Hide overflow */
             border-right: 2px solid; /* Simulate a cursor */
@@ -486,7 +487,7 @@ main { overflow-x: hidden; }
             }
         }
 .typing{
-            font-size: 24px; /* Adjust size as needed */
+            font-size: 30px; /* Adjust size as needed */
             white-space: nowrap; /* Prevent line breaks */
             overflow: hidden; /* Hide overflow */
             border-right: 2px solid; /* Simulate a cursor */
